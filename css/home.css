@@ -8,21 +8,13 @@ body {
 .header {
     width: 100%;
 }
-
-.top-bar {
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 5px 0;
-    font-size: 14px;
-    color: #666;
-}
-
 .main-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #fff;
+    background-color: #333;
+    height: 70px;
 }
 
 .logo {
@@ -71,7 +63,7 @@ body {
     top: -5px;
     right: -10px;
     background-color: red;
-    color: #fff;
+    color: #ffffff;
     font-size: 12px;
     border-radius: 50%;
     padding: 2px 5px;
@@ -79,7 +71,7 @@ body {
 
 
 .navbar {
-    background-color: #fffcfc;
+    background-color: #454760;
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -98,11 +90,11 @@ body {
 
 .navbar ul li a {
     text-decoration: none;
-    color: #d32f2f;
+    color: #ffffff;
     font-weight: bold;
     
 }
-.container1 {
+.container2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -110,10 +102,138 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
-.container2 {
+.container1 {
     display: flex;
     margin: 20px auto;
-    width: 90%;
+    width: 95%;
+    padding-top: 30px;
+    
+}
+.checkbox-group {
+    display: flex;
+    flex-direction: column; /* Sắp xếp checkbox theo cột */
+    gap: 10px; /* Khoảng cách giữa các checkbox */
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+/* Tùy chỉnh checkbox */
+.custom-checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+}
+
+/* Ẩn checkbox mặc định */
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+/* Tạo ô vuông thay thế */
+.custom-checkbox .checkmark {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Hiệu ứng hover */
+.custom-checkbox:hover .checkmark {
+    background-color: #f3f3f3;
+    border-color: #888;
+}
+
+/* Khi được chọn */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+/* Biểu tượng dấu tích */
+.custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
+    display: block;
+}
+
+.custom-checkbox .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+/* Định kiểu cho thẻ <select> */
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    font-size: 16px;
+}
+
+/* Giao diện cho <select> */
+.custom-select select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    appearance: none; /* Ẩn mũi tên mặc định */
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Thêm hiệu ứng hover và focus */
+.custom-select select:hover {
+    border-color: #888;
+}
+
+.custom-select select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Biểu tượng mũi tên tùy chỉnh */
+.custom-select:after {
+    content: "▼";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 12px;
+    color: #333;
+}
+
+/* Định kiểu cho các tùy chọn */
+.custom-select select option {
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Tùy chỉnh màu sắc khi chọn */
+.custom-select select option:checked {
+    background-color: #4CAF50;
+    color: #fff;
 }
 
 .sidebar {
@@ -122,6 +242,14 @@ body {
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     height: 300px;
+}
+.sidebar-filter{
+    width: 200%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 500px;
+
 }
 .sidebar h3{
     text-align: center;
@@ -143,18 +271,18 @@ body {
     color: #d32f2f;
     font-weight: bold;
 }
-a{text-decoration: none; 
+.sidebar-filter a {
+    text-decoration: none;
+    color: #d32f2f;
+    font-weight: bold;
+}
+a{
         font-size: 20px;    
         font-weight: bold;    
         color: black;         
-        transition: color 0.3s ease, background 0.3s ease; 
 }
-a:hover {
-        color: white;                    
-        background-color: rgb(246, 242, 242);            
-        padding: 2px 4px;                 
-        border-radius: 4px;               
-      }
+
+
 .main-content {
     width: 75%;
     margin-left: 20px;
@@ -339,14 +467,11 @@ border-radius: 10px;
 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 /* Hiệu ứng khi chuột di qua sản phẩm */
 .product:hover {
-transform: scale(1.05); /* Phóng to sản phẩm */
-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Tạo hiệu ứng đổ bóng */
-}
-
-
+    transform: scale(1.05); /* Phóng to sản phẩm */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Tạo hiệu ứng đổ bóng */
+    }
 .product img {
     width: 100%;
     height: auto;
@@ -471,25 +596,91 @@ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Tạo hiệu ứng đổ bóng */
 .menu-item button:hover {
     background-color: #f7f7f7;
 }
-/* footer */
+/* Footer Styles */
 .footer {
-    background-color:#999;
+    background-color: #333;
     color: #fff;
-    padding: 10px 0;
-}
-
-.footer .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 20px 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
-}
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+  }
+  
+  .footer-logo {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-title {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .footer-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-list li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-list li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-list li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+  
 .footer .row  .map img {
     width: 400px;;
     height: 200px;
 }
-
-
+.footer-section p i {
+    margin-right: 8px;
+    color: #c03c3c; /* Màu sắc cho icon */
+  }
+  
+  .footer-section p a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-section p a:hover {
+    text-decoration: underline;
+  }
+  
