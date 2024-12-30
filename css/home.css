@@ -14,64 +14,126 @@ body {
     justify-content: space-between;
     padding: 10px 20px;
     background-color: #333;
-    height: 70px;
+    height: 100px;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .logo img {
-    height: 50px;
+    height: 170px;
+    padding-left: 30px;
+    
 }
 
 .search-bar {
     display: flex;
     align-items: center;
-    gap: 10px;
-}
+    background-color: #fff; /* Màu nền trắng */
+    border-radius: 30px; /* Bo góc tròn */
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 500px;
+  }
 
-.search-bar select,
-.search-bar input {
-    padding: 5px;
-    font-size: 14px;
-}
-
-.search-bar button {
-    padding: 5px 10px;
-    background-color: #ddd;
+  .search-bar select {
     border: none;
+    background: transparent;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+    color: #333; /* Màu chữ đậm */
+    appearance: none; /* Ẩn mũi tên mặc định */
+  }
+
+  .search-bar input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .search-bar input::placeholder {
+    color: #aaa; /* Màu placeholder nhạt */
+  }
+
+  .search-bar button {
+    background-color: #d0021b; /* Màu đỏ */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
-}
+    font-weight: bold;
+    outline: none;
+  }
+
+  .search-bar button:hover {
+    background-color: #a80016; /* Màu đỏ đậm hơn khi hover */
+  }
 
 .icons {
     display: flex;
     gap: 15px;
     align-items: center;
+    
+   
 }
 
-.icon {
-    font-size: 20px;
-    cursor: pointer;
+.cart-icon {
     position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    text-decoration: none; /* Xóa gạch chân link */
 }
 
+.cart-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: #ffffff; /* Màu của icon */
+    text-decoration: none; /* Xóa gạch chân mặc định của link */
+}
 .cart-count {
     position: absolute;
-    top: -5px;
-    right: -10px;
-    background-color: red;
-    color: #ffffff;
-    font-size: 12px;
-    border-radius: 50%;
-    padding: 2px 5px;
+    top: 5px;
+    right: 5px;
+    background-color: #FF5722; /* Màu nền số */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Bo tròn số */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.login-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    text-decoration: none; /* Xóa gạch chân link */
+    padding-top: 5px;
+}
 
+.login-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: #ffffff; /* Màu của icon */
+}
 .navbar {
-    background-color: #454760;
+    background-color: #ca9142;
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -92,7 +154,12 @@ body {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
-    
+    font-size: 20px; /* Kích thước chữ */
+    transition: color 0.3s ease, transform 0.3s ease; /* Hiệu ứng mượt */
+
+}
+.navbar ul li a:hover{
+color: #FF5722; /* Màu chữ khi hover */
 }
 .container2 {
     display: flex;
@@ -292,8 +359,8 @@ a{
     border: 1px solid #ddd;
 }
 
-.menu-header {
-    background-color: #e74c3c;
+.menu-headers {
+    background-color: #ca9142;
     color: white;
     padding: 10px;
     font-size: 18px;
@@ -571,8 +638,8 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
         background-color: #b71c1c;
     }
 
-.menu-header {
-    background-color: #e74c3c;
+.menu-header-filter {
+    background-color: #ca9142;
     color: white;
     padding: 10px;
     font-size: 18px;
@@ -644,10 +711,13 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   .footer-list li a {
     color: #fff;
     text-decoration: none;
+     font-size: 20px; /* Kích thước chữ */
+    transition: color 0.3s ease, transform 0.3s ease; /* Hiệu ứng mượt */
   }
   
   .footer-list li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+     color: #c03c3c; /* Màu sắc cho icon */
   }
   
   .footer-bottom {
@@ -658,12 +728,12 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .footer-bottom a {
-    color: #fff;
+    color: #8c1a1a;
     text-decoration: none;
   }
   
   .footer-bottom a:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
   
 .footer .row  .map img {
@@ -672,15 +742,19 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .footer-section p i {
     margin-right: 8px;
-    color: #c03c3c; /* Màu sắc cho icon */
   }
-  
+
   .footer-section p a {
     color: #fff;
     text-decoration: none;
+    margin-right: 8px;
+    font-size: 17px; /* Kích thước chữ */
+    transition: color 0.3s ease, transform 0.3s ease; /* Hiệu ứng mượt */
   }
   
   .footer-section p a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #c03c3c; /* Màu sắc cho icon */
   }
+ 
   

@@ -5,29 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
     <title>Rock Paradise</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="main-header">
             <div class="logo">
-                <img src="logo.png" alt="Ngọc Quý">
-                <span>NGỌC QUÝ</span>
+                <img src="img/ROCK_PARADISE-removebg-preview.png">
             </div>
             <div class="search-bar">
                 <select>
-                    <option value="all">Tất cả</option>
+                  <option value="all">All</option>
+                  <option value="category1">Category 1</option>
+                  <option value="category2">Category 2</option>
                 </select>
-                <input type="text" placeholder="Tìm kiếm sản phẩm...">
-                <button>🔍</button>
-            </div>
+                <input type="text" placeholder="Search here" />
+                <button>Search</button>
+              </div>
             <div class="icons">
-                <div class="icon user">👤</div>
-                <div class="icon cart">🛒 <span class="cart-count">0</span></div>
+                <a href="login.html" class="login-icon" title="Login">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                </a>
+                <a href="cart.html" class="cart-icon" title="shopping cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7 18c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm10 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm-10-2h11.34l.719-4h-13.059l-.895-5h-3.105v2h1.469l3.256 16h12.111v-2h-11.38l-.258-1h12.29c.528 0 .979-.421 1.064-.94l1-6c.052-.318-.021-.648-.213-.9s-.489-.387-.851-.387h-13.43l-.259-1h-2.4v-2h3.059z"/>
+                    </svg>
+                    <span class="cart-count">5</span> <!-- Hiển thị số sản phẩm -->
+                </a>
             </div>
         </div>
         <div class="navbar">
         <ul>
-            <li><a href="http://127.0.0.1:5501/Home.html">trang chủ</a></li>
+            <li><a href="http://127.0.0.1:5501/Home.html">Trang chủ</a></li>
             <li><a href="Blog.html">Blog</a></li>
             <li><a href="#">Liên hệ</a></li>
             <li><a href="#">Giới thiệu</a></li>
@@ -42,7 +53,7 @@
             <div class="menu-item">
                 <button>DIAMON</button>
                 <div class="submenu">
-                    <a href="Diamon.html">Diamon</a>
+                    <a href="Diamon.html">Diamong</a>
                     <a href="#">Sản phẩm 2</a>
                 </div>
             </div>
@@ -119,7 +130,7 @@
                     <option value="4">Option 4</option>
                 </select>
             </div>
-               <p>SIZE</p>
+             
 
             </div>
            </div>
@@ -127,10 +138,12 @@
         <div class="main-content">
             <div class="banner">
                 <div id="slideshow">
-                    <img class="mySlides" src="img/da-quy.jpg">
-                    <img class="mySlides" src="img/kim_cuong_vua_cua_cac_loai_da_quy___2.jpg">
-                    <img class="mySlides" src="img/Ten-tieng-anh-cua-cac-loiaj-da-quy-1024x551.jpg">
-                    <img class="mySlides" src="img/da-quy.jpg">
+                    <img class="mySlides" src="img/pngtree-natural-sapphire-gemstone-jewel-or-gems-on-black-shine-color-image_15658804.jpg">
+                    <img class="mySlides" src="img/pngtree-exquisite-3d-render-of-diamond-studded-rose-gold-engagement-ring-against-image_13546850.png">
+                    <img class="mySlides" src="img/pngtree-exquisite-3d-render-of-diamond-studded-rose-gold-engagement-ring-against-image_13546850.png">
+                    <img class="mySlides" src="img/what-is-most-brilliant-gem-cut-og-image-1200x627pixels.jpg">
+                    <img class="mySlides" src="img/pngtree-jewelry-diamond-ring-with-abstract-festive-glitter-christmas-holiday-texture-background-image_15508927.jpg">
+                  </div>
                   </div>
             </div>
             <span class="underline-hover">OUTSTANDING PRODUCTS</span>
@@ -277,7 +290,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>Copyright © 2024 Ngọc Quý Gemstones | Cung cấp bởi <a href="https://sapo.vn">Sapo</a></p>
+        <p>Copyright © 2024 Rock paradise</p>
     </div>
   </footer>
 </body>
