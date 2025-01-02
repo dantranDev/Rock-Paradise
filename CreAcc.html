@@ -4,86 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/CreAcc.css">
+    <script src="js/CreAcc.js" defer></script>
     <title>Create Account</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .container {
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 400px;
-        }
-
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .form-container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-            min-width: 150px;
-        }
-
-        .form-group.full-width {
-            flex: 2;
-        }
-
-        label {
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        input,
-        select,
-        textarea {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        textarea {
-            resize: none;
-        }
-
-        button {
-            padding: 10px;
-            background-color: #d32f2f;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #b64040;
-        }
-
-        .notes {
-            margin-top: 20px;
-        }
-    </style>
 </head>
-
 <body>
 
     <div class="container">
@@ -129,10 +53,3 @@
 </body>
 
 </html>
-<script>
-    function showSuccessMessage(event) {
-        event.preventDefault(); 
-        alert("Account created successfully!");
-        window.location.href = "home.html"; // Chuyển hướng về trang home
-    }
-</script>

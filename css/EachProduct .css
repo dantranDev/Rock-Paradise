@@ -1,0 +1,194 @@
+
+.product-image {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    background-color: #ffffff;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+.product-details {
+    flex: 1;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.product-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: left;
+    /* Căn trái */
+}
+
+.product-price {
+    font-size: 20px;
+    color: #e63946;
+    margin-bottom: 10px;
+    text-align: left;
+    /* Căn trái */
+}
+
+.product-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+    /* Căn trái */
+}
+
+.product-actions {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    justify-content: flex-start;
+    /* Căn trái các phần tử trong flex */
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.btn-secondary {
+    background-color: #fb0000;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.rating {
+    margin: 20px 0;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+
+.stars label {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.stars input[type="radio"]:checked~label {
+    color: #f39c12;
+}
+
+.stars label:hover,
+.stars label:hover~label {
+    color: #f39c12;
+}
+
+.review {
+    margin: 20px 0;
+}
+
+.review textarea {
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.review button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.review button:hover {
+    background-color: #0056b3;
+}
+
+.options {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.options select,
+.options input {
+    padding: 8px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.favorite {
+    font-size: 18px;
+    color: #e63946;
+    /* Màu đỏ cho trái tim */
+    text-decoration: none;
+    /* Loại bỏ gạch dưới */
+    display: inline-flex;
+    /* Đảm bảo liên kết và biểu tượng trái tim được căn chỉnh đúng */
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    /* Thêm hiệu ứng chuyển màu khi hover */
+}
+
+.favorite:hover {
+    color: #ff6b6b;
+    /* Màu khi hover */
+}
+
+.favorite:active {
+    transform: scale(0.95);
+    /* Thu nhỏ khi nhấn */
+}
+
+.favorite .heart {
+    margin-right: 8px;
+    /* Khoảng cách giữa biểu tượng và văn bản */
+}
+
+.share {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.share img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    max-width: 1220px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+  
+ 
+  
