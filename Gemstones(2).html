@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/EachProduct .css">
+    <link rel="stylesheet" href="css/style.css">
+    <script srs="js/EachProduct.js" defer></script>  
+    <title>Rock Paradise</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="main-header">
+            <div class="logo">
+                <img src="img/ROCK_PARADISE-removebg-preview.png">
+            </div>
+            <div class="search-bar">
+                <select>
+                    <option value="all">All</option>
+                    <option value="category1">Category 1</option>
+                    <option value="category2">Category 2</option>
+                </select>
+                <input type="text" placeholder="Search here" />
+                <button>Search</button>
+            </div>
+            <div class="icons">
+                <a href="login.html" class="login-icon" title="Login">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                    </svg>
+                </a>
+                <a href="cart.html" class="cart-icon" title="shopping cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M7 18c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm10 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm-10-2h11.34l.719-4h-13.059l-.895-5h-3.105v2h1.469l3.256 16h12.111v-2h-11.38l-.258-1h12.29c.528 0 .979-.421 1.064-.94l1-6c.052-.318-.021-.648-.213-.9s-.489-.387-.851-.387h-13.43l-.259-1h-2.4v-2h3.059z" />
+                    </svg>
+                    <span class="cart-count">5</span> 
+                </a>
+            </div>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Introduce.html">Introduce</a></li>
+                <li><a href="#">Shopping Cart</a></li>
+            </ul>
+        </div>
+
+        <div class="container1">
+            <div class="sidebar">
+                <div class="menu-headers">PRODUCT LIST</div>
+
+                <div class="menu-item">
+                    <button>GEMSTONES</button>
+                    <div class="submenu">
+                        <a href="Gemstones.html">GEMSTONES</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <button>RINGS</button>
+                    <div class="submenu">
+                        <a href="Rings.html">RINGS</a>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <button>BACELETS</button>
+                    <div class="submenu">
+                        <a href="Bacelets.html">BACELETS</a>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <button>NECKLACES</button>
+                    <div class="submenu">
+                        <a href="Necklaces.html">NECKLACES</a>
+                   
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-content">
+                <div class="banner">
+                    <div id="slideshow">
+                        <div class="content">
+                            <div class="product-image">
+                                <img src="/1.jpg" alt="Product Image">
+                            </div>
+                            <div class="product-details">
+                                <h2 class="product-name">Product Name: Feng Shui Bracelet</h2>
+                                <p class="product-price">500.000 VNĐ</p>
+                                <div class="product-info">
+                                    <p><strong>Color:</strong> Black</p>
+                                    <p><strong>Size:</strong> 18 cm</p>
+                                    <p><strong>Brand:</strong> Rock Paradise</p>
+                                    <p><strong>Product Code:</strong> RP12345</p>
+                                    <p><strong>Type:</strong> Feng Shui Jewelry</p>
+                                    <p><strong>Shape:</strong> Round Beads</p>
+                                    <p><strong>Stone Type:</strong> Obsidian</p>
+
+                                <!-- Options -->
+                                <div class="options">
+                                    <select name="size">
+                                        <option value="small">Small</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="large">Large</option>
+                                    </select>
+                                    <select name="color">
+                                        <option value="black">Black</option>
+                                        <option value="red">Red</option>
+                                        <option value="blue">Blue</option>
+                                    </select>
+                                    <input type="number" min="1" max="10" value="1">
+                                </div>
+
+                                <div class="product-actions">
+                                    <a href="#" class="btn">Add to Cart</a>
+                                    <a href="#" class="btn btn-secondary">Buy Now</a>
+                                </div>
+
+                                <!-- Favorite -->
+                                <div style="text-align: left;">
+                                    <a href="#" class="favorite" onclick="toggleFavorite(event)">
+                                        ❤ Add to Favorites
+                                    </a>
+                                </div>
+
+                                <!-- Rating -->
+                                <div class="rating">
+                                    <h3 style="text-align: left;">Product Rating:</h3>
+                                    <div class="stars">
+                                        <input type="radio" id="star5" name="rating" value="5"><label
+                                            for="star5">★</label>
+                                        <input type="radio" id="star4" name="rating" value="4"><label
+                                            for="star4">★</label>
+                                        <input type="radio" id="star3" name="rating" value="3"><label
+                                            for="star3">★</label>
+                                        <input type="radio" id="star2" name="rating" value="2"><label
+                                            for="star2">★</label>
+                                        <input type="radio" id="star1" name="rating" value="1"><label
+                                            for="star1">★</label>
+                                    </div>
+                                </div>
+
+                                <!-- Review Section -->
+                                <div class="review">
+                                    <h3>Reviews:</h3>
+                                    <textarea placeholder="Write your review..."></textarea>
+                                    <button>Submit</button>
+                                </div>
+
+                                <!-- Share Section -->
+                                <div class="share">
+                                    <h3>Chia sẻ:</h3>
+                                    <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+                                    <a href="#"><img src="img/zalo.png" alt="Zalo"></a>
+                                    <a href="#"><img src="img/email.png" alt="Email"></a>
+                                    <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-container">
+             <!-- Logo and Info -->
+             <div class="footer-section">
+                <h3 class="footer-logo">ROCK PARADISE®</h3>
+                <p><i class="fas fa-map-marker-alt"></i> <a href="">Tu Trong, Ninh Kieu Distric, Can Tho City</a>
+                </p>
+                <p><i class="fas fa-phone-alt"></i> <a href="">84 396536628</a> </p>
+                <p><i class="fas fa-envelope"></i> <a
+                        href="mailto:mr.dinhngocquy@gmail.com">mr.dinhngocquy@gmail.com</a></p>
+            </div>
+
+            <!-- Directory -->
+            <div class="footer-section">
+                <h3 class="footer-title">Directory</h3>
+                <ul class="footer-list">
+                    <li><a href="#">Gemstones</a></li>
+                    <li><a href="#">Rings</a></li>
+                    <li><a href="#">Bracelets</a></li>
+                    <li><a href="#">Necklaces</a></li>
+                    <li><a href="#">Other accessories</a></li>
+                </ul>
+            </div>
+
+            <!-- Policy -->
+            <div class="footer-section">
+                <h3 class="footer-title">Policy</h3>
+                <ul class="footer-list">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Shipping policy</a></li>
+                    <li><a href="#">Return policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+
+            <!-- Google Map -->
+            <div class="footer-section">
+                <h3 class="footer-title">Our Location</h3>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.7965155840207!2d105.77957149999999!3d10.033643699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0881f9a732075%3A0xfa43fbeb2b00ca73!2sCUSC%20-%20Cantho%20University%20Software%20Center!5e0!3m2!1sfr!2s!4v1735373612723!5m2!1sfr!2s"
+                        width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 Rock paradise</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,327 @@
+.navbar {
+    background-color: #ca9142;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    /* Kích thước chữ */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Hiệu ứng mượt */
+
+}
+
+.navbar ul li a:hover {
+    color: #FF5722;
+    /* Màu chữ khi hover */
+}
+
+.cart-count {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #FF5722;
+    /* Màu nền số */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* Bo tròn số */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-icon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    /* Xóa gạch chân link */
+}
+
+.cart-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: #ffffff;
+    /* Màu của icon */
+    text-decoration: none;
+    /* Xóa gạch chân mặc định của link */
+}
+
+.login-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    /* Xóa gạch chân link */
+    padding-top: 5px;
+}
+
+.login-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: #ffffff;
+    /* Màu của icon */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    /* Màu nền trắng */
+    border-radius: 30px;
+    /* Bo góc tròn */
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 500px;
+}
+
+.search-bar select {
+    border: none;
+    background: transparent;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+    color: #333;
+    /* Màu chữ đậm */
+    appearance: none;
+    /* Ẩn mũi tên mặc định */
+}
+
+.search-bar input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+.search-bar input::placeholder {
+    color: #aaa;
+    /* Màu placeholder nhạt */
+}
+
+.search-bar button {
+    background-color: #d0021b;
+    /* Màu đỏ */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+}
+
+.search-bar button:hover {
+    background-color: #a80016;
+    /* Màu đỏ đậm hơn khi hover */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    height: 170px;
+    padding-left: 30px;
+
+}
+
+.header {
+    width: 100%;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    height: 100px;
+}
+
+.intro {
+    flex: 1;
+    /* Đẩy phần giới thiệu vào giữa */
+    width: 50%;
+    /* Chiều rộng 50% trang */
+    max-width: 600px;
+    /* Chiều rộng tối đa */
+    height: max-content;
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    text-align: left;
+    /* Canh giữa nội dung */
+    background-color: #ffffff;
+    /* Màu nền nhạt */
+    color: #333;
+    /* Màu chữ */
+    padding: 20px;
+    margin: 0 auto;
+    /* Đảm bảo căn giữa nội dung */
+    border-radius: 8px;
+    /* Bo góc cho đẹp */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Thêm bóng để nổi bật */
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.footer-section p i {
+    margin-right: 8px;
+}
+
+.footer-section p a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 8px;
+    font-size: 17px;
+    /* Kích thước chữ */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Hiệu ứng mượt */
+}
+
+.footer-section p a:hover {
+    text-decoration: none;
+    color: #c03c3c;
+    /* Màu sắc cho icon */
+}
+.footer-logo {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+.footer-title {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .footer-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-list li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-list li a {
+    color: #fff;
+    text-decoration: none;
+     font-size: 20px; /* Kích thước chữ */
+    transition: color 0.3s ease, transform 0.3s ease; /* Hiệu ứng mượt */
+  }
+  
+  .footer-list li a:hover {
+    text-decoration: none;
+     color: #c03c3c; /* Màu sắc cho icon */
+  }
+  .button2 {
+    background-color: #000000; /* Màu xanh lam */
+    color: rgb(255, 255, 255);
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s; /* Hiệu ứng khi nhấn */
+}
+.button2:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px); /* Nổi lên khi hover */
+}
+.button2:active {
+    transform: translateY(2px); /* Lún xuống khi nhấn */
+}
+.contact-info {
+    margin-bottom: 20px;
+}
+.contact-info h2 {
+    color: #333;
+}
+.contact-info p {
+    margin: 5px 0;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+.form-group input,
+.form-group textarea {
+    width: 96%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom a {
+    color: #8c1a1a;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: none;
+  }
+  
